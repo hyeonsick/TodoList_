@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>로그인</title>
+  </head>
+  <body>
+    <h1>로그인</h1>
+    <form id="login-form">
+      <label for="username">사용자 이름:</label>
+      <input type="text" id="username" name="username">
+      <br>
+      <label for="password">비밀번호:</label>
+      <input type="password" id="password" name="password">
+      <br>
+      <button type="submit">로그인</button>
+      <a href='signup.html'>회원가입</a>
+    </form>
+
+    <script>
+      const form = document.getElementById('login-form');
+
+      form.addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+
+        const storedUsername = localStorage.getItem('username');
+        const storedPassword = localStorage.getItem('password');
+
+        if (username === storedUsername && password === storedPassword) {
+          alert('로그인 되었습니다!');
+          window.location.replace('todolist.html');
+        } else {
+          alert('로그인에 실패하였습니다.');
+        }
+      });
+    </script>
+  </body>
+</html>

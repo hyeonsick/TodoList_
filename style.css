@@ -1,0 +1,59 @@
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+#todo-input {
+  width: 60%;
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+button[type="submit"]:hover {
+  cursor: pointer;
+  background-color: #2E8B57;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  text-align: left;
+}
+
+li {
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+button {
+  padding: 10px;
+  font-size: 18px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #2E8B57;
+}
+
+button:active {
+  background-color: #228B22;
+}
